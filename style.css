@@ -53,17 +53,21 @@ img {
 }
 
 @media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
     #recipe-button {
-        font-size: 3vw;
+        font-size: 4vw;
+        display: grid;
     }
 
     h1 {
-        font-size: 9vw;
+        font-size: 20vw;
     }
 
     img {
-        max-width: 90vw;
-        max-height: 90vh;
+        max-width: 50vw;
     }
 }
 

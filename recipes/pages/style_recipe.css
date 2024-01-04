@@ -58,6 +58,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
     #recipe-button {
         font-size: 2.5vw;
     }
@@ -67,13 +71,12 @@ img {
     }
 
     img {
-        max-width: 30vw;
-        max-height: 300vh;
+        max-width: 50vw;
     }
 
     .ingredients, .instructions {
-        font-size: 2.3vw;
-        margin: 40px;
+        font-size: 3.1vw;
+        margin: 0px;
         letter-spacing: 0.05em;
     }
 
@@ -83,7 +86,7 @@ img {
     }
 
     #back-button {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 }
 
