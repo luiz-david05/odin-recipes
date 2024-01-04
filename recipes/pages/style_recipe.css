@@ -1,27 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 100px;
-    margin: 0px;
+    display: block;
+    background-color: #f2f2f2f2;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    font-family: "Norse";
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 5vw;
+    cursor: pointer;
 }
 
 img {
-    max-width: 220px;
-    max-height: 600px;
- }
+    max-width: 30vw;
+    max-height: 40vh;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.ingredients, .instructions {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2vw;
+    text-align: left;
+    margin: 50px;
+}
+
+.instructions p {
+    text-align: center;
+}
 
 #back-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px;
-    margin: 50px 0px 0px 0px;
-    text-align: center;
+    color: #ac7707;
+    font-family: "Norse";
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ac7707;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    border-radius: 4px;
 }
 
 #back-button:hover {
-    background-color: #f44336;
+    background-color: #ac7707;
     color: white;
+}
+
+@media (max-width: 768px) {
+    #recipe-button {
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    img {
+        max-width: 30vw;
+        max-height: 300vh;
+    }
+
+    .ingredients, .instructions {
+        font-size: 2.3vw;
+        margin: 40px;
+        letter-spacing: 0.05em;
+    }
+
+    .instructions p {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    #back-button {
+        font-size: 3vw;
+    }
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(../../resources/Norse.otf);
 }
